@@ -9,6 +9,10 @@ h2.subtitle {
 	font-family: 'Aleo';
 }
 
+.accent {
+	color: $accentColor;
+}
+
 h1 {
 	font-size: 3.5rem;
 }
@@ -29,6 +33,9 @@ ol {
 
 a{
 	:visited{
+		color:white;
+	}
+	:active{
 		color:white;
 	}
 }

@@ -136,132 +136,56 @@ get_header();
 		</div>
 	</section>
 
-	<!-- Video -->
+	<!-- Subscribe -->
 	<section id="subscribe" >
-
 		<div class="wrapper">
 			<div class="container pt-5 pb-5">
 				<div class="row pt-5 pb-5">
 					<div class="col-12 text-center pt-5 pb-5">
-						<h2 class="pt-5">Subscribe</h2>
-						<p class="pt-1 pb-4">Sign up for the email list to make sure you never miss any updates.</p>
+						<h2 class="pt-5 subtitle">Newsletter Subscribe</h2>
+						<p class="pt-1 pb-4">Subscribe to the newsletter and get the first chapter of <i><strong>Call of Shadows</strong></i> for free in your inbox.</p>
 						<?php echo(do_shortcode('[mc4wp_form id=8]')) ?>
-						
-						<form name="subscribeForm" style="display:none;">
-							<div class="row">
-								<div class="col-lg-4 col-md-12 gx-2">
-									<input type="text" class=" flex-fill form-control me-2 mb-2" id="firstName" name="FNAME"
-									 placeholder="First name" aria-label="First name">
-								</div>
-								<div class="col-lg-4 col-md-12 gx-2">
-									<input type="email" class=" flex-fill form-control me-2 mb-2" id="email" name="EMAIL"
-									 placeholder="Email address" aria-label="Email">
-								</div>
-								<div class="col-lg-4 col-md-12 gx-2">
-									<input type="hidden" name="mc4wp-subscribe" value="1" />
-									<label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1711406212"><input type="hidden" name="_mc4wp_form_id" value="76"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
-									<button type="submit" aria-label="Send Me Updates" class="submit flex-fill btn btn-primary me-1 mb-2">Send Me Updates</button>
-								  </div>
-							  </div>
-							  <div>
-								<p class="form-text white pt-2">We'll never share your info with anyone else.</p>
-							  </div>
-							  <div class="">
-								<div class="" role="alert">
-									
-								</div>
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>
 
-			<video id="background-video" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/Dungeon.mp4">
+			<!-- Video -->
+			<video id="background-video" loading="lazy" autoplay loop muted poster="<?php echo get_template_directory_uri(); ?>/images/Dungeon.mp4">
 				<source src="<?php echo get_template_directory_uri(); ?>/images/Dungeon.mp4" type="video/mp4">
-			  </video>
+			</video>
 
 			  <!-- Pause button -->
-			  
-				<button type="pause-button" class="btn btn-dark pause-button" id="btn-pause-video" title="Pause video" alt="Pause video" onclick="pauseVidToggle()">
-					<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-pause-fill" viewBox="0 0 16 16">
-						<path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/>
-					  </svg>
-				</button>
-			  
-			  
-		</div>
-		
-			
+			<button type="pause-button" class="btn btn-dark pause-button" id="btn-pause-video" title="Pause/Play Video" alt="Pause video" onclick="pauseVidToggle()">
+				<svg id="pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-pause-fill" viewBox="0 0 16 16">
+					<path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"/>
+				</svg>
 
-		
-
-		
-	</section>
-
-	<section style="height:200px;">
-		<h3>HERE'S THE BUTTON</h3>
-		
-	</section>
-
-
-	<!-- Subscribe -->
-	<section id="subscribe___" class="pt-5 pb-5 px-5 white">
-		
-		
-
-		<div class="container pt-5 pb-5">
-			<div class="row pt-5 pb-5">
-				<div class="col-12 text-center pt-5 pb-5">
-					<h2>Subscribe</h2>
-					<p class="pt-1 pb-4">Sign up for the email list to make sure you never miss any updates.</p>
-					<?php echo(do_shortcode('[mc4wp_form id=8]')) ?>
-					
-					<form name="subscribeForm" style="display:none;">
-						<div class="row">
-							<div class="col-lg-4 col-md-12 gx-2">
-								<input type="text" class=" flex-fill form-control me-2 mb-2" id="firstName" name="FNAME"
-								 placeholder="First name" aria-label="First name">
-							</div>
-							<div class="col-lg-4 col-md-12 gx-2">
-								<input type="email" class=" flex-fill form-control me-2 mb-2" id="email" name="EMAIL"
-								 placeholder="Email address" aria-label="Email">
-							</div>
-							<div class="col-lg-4 col-md-12 gx-2">
-								<input type="hidden" name="mc4wp-subscribe" value="1" />
-								<label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1711406212"><input type="hidden" name="_mc4wp_form_id" value="76"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
-								<button type="submit" aria-label="Send Me Updates" class="flex-fill btn btn-primary me-1 mb-2">Send Me Updates</button>
-							  </div>
-						  </div>
-						  <div>
-							<p class="form-text white pt-2">We'll never share your info with anyone else.</p>
-						  </div>
-						  <div class="">
-							<div class="" role="alert">
-								
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
+				<!-- Play -->
+				<svg id="play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="hide bi bi-play-fill" viewBox="0 0 16 16">
+					<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+				  </svg>
+			</button>
 		</div>
 	</section>
 
 	<!-- About The Author -->
-	<section id="about" class="bg-light pt-5 pb-5">
+	<section id="about" class="bg-darkColor white pt-5 pb-5">
 		<div class="container pt-5 pb-5">
 			<div class="row pt-5 pb-5">
 				<div class="col-md-12 col-lg-4 gx-5">
 					<div class="img-div">
-						<img alt="Author Photo" loading="lazy" style="display: none;" src="<?php echo get_template_directory_uri(); ?>/images/Author-Photo.jpg">
+						<img alt="Author Photo" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/Author-Photo.jpg">
 					</div>
 					
 				</div>
 				<div class="col-md-12 col-lg-8 gx-5">
 					<p class="topper about pt-3">About The Author</p>
-					<h2 class="name">John Stephens</h2>
+					<h2 class="subtitle name">Meet CJ Kingsley</h2>
 					<p class="author-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin aliquam ultrices sagittis orci a 
 					scelerisque purus semper. Massa sapien faucibus et molestie ac feugiat sed lectus.</p>
+					<p class="author-description">Sollicitudin aliquam ultrices sagittis orci a 
+						scelerisque purus semper. Massa sapien faucibus et molestie ac feugiat sed lectus.</p>
 				</div>
 			</div>
 		</div>
@@ -273,80 +197,18 @@ get_header();
 			<div class="row align-items-center">
 				<div class="image-col col-lg-5 col-md-12">
 					
-					<img class="the-image" loading="lazy" alt="Explorer on Alien Planet" src="<?php echo get_template_directory_uri(); ?>/images/Explorer-Spacesuit-Alien-Planet.jpg">
+					<img class="the-image" loading="lazy" alt="Palace Background" src="<?php echo get_template_directory_uri(); ?>/images/Palace-Background.jpg">
 				</div>
+				
 				<div class="col-lg-7 col-md-12 pt-5 pb-5 px-5 ">
-					<h2 class="pt-5">Contact</h2>
-					<p class="pt-1 pb-4">For any questions about my book, interview requests, or to just say hello, use the form below.</p>
+					<h2 class="subtitle pt-5">Contact</h2>
+					<p class="pt-1 pb-4">Please fill out the form below to contact CJ Kingsley.</p>
 						<?php echo do_shortcode('[contact-form-7 id="76bfc21" title="ContactForm"]'); ?>
 				</div>
+				
 			</div>
 		</div>
-	</section>
-
-	<!-- Contact ORIGINAL -->
-	<section id="contact" class="bg-dark white" style="display:none;">
-		<div class="container align-items-center">
-			<div class="row align-items-center">
-				<div class="image-col col-lg-5 col-md-12">
-					<img class="the-image" loading="lazy" alt="Explorer on Alien Planet" src="<?php echo get_template_directory_uri(); ?>/images/Explorer-Spacesuit-Alien-Planet.jpg">
-				</div>
-				<div class="col-lg-7 col-md-12 pt-5 pb-5 px-5 ">
-					<h2 class="">Contact</h2>
-					<p class="pt-1 pb-4">For any questions about my book, interview requests, or to just say hello, use the form below.</p>
-					
-					<form name="contactForm">
-						<div class="row" >
-							<div class="col-lg-6 col-md-12 gx-2">
-								<input type="text" class="flex-fill form-control me-2 mb-2" id="firstName" name="FNAME"
-								 placeholder="First name" aria-label="First name">
-							</div>
-							<div class="col-lg-6 col-md-12 gx-2">
-								<input type="text" class="flex-fill form-control me-2 mb-2" id="lastName" name="LNAME"
-								 placeholder="Last name" aria-label="Last name">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 gx-2">
-								<input type="email" class="flex-fill form-control me-2 mb-2" id="email" name="EMAIL"
-								 placeholder="Email address" aria-label="Email">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 gx-2">
-								<input type="text" class="flex-fill form-control me-2 mb-2" id="subject" name="SUBJECT"
-								 placeholder="Subject" aria-label="Subject">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-12 col-md-12 gx-2">
-								<textarea class="flex-fill form-control me-2 mb-2" id="message" rows="3" name="MESSAGE"
-								placeholder="Your message" aria-label="Message"></textarea>
-							</div>
-						</div>
-						<div class="row">
-								<div class="col-lg-12 col-md-12 gx-2">
-									
-									<label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1711406212"><input type="hidden" name="_mc4wp_form_id" value="76"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
-									<button aria-label="Submit" type="submit" class="flex-fill btn btn-primary me-1 mb-2">Submit</button>
-								</div>
-						 	 </div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Display a template -->
-	<section style="display:none;">
-		<?php get_template_part( 'template-parts/content', 'page' ); ?>
-	</section>
-
-	<!-- Display the book title -->
-	<section style="display:none;">
-		<h1><?php echo($book_title); ?></h1>
-	</section>
-		
+	</section>		
 
 	</main><!-- #main -->
 
