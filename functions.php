@@ -141,7 +141,7 @@ add_action( 'widgets_init', '_s_widgets_init' );
 function my_remove_editor_from_post_type() {
 	remove_post_type_support( 'page', 'editor' );
 }
-add_action('init', 'my_remove_editor_from_post_type');
+//add_action('init', 'my_remove_editor_from_post_type');
 
 /**
  * Remove post type for non-admin.

@@ -9941,6 +9941,7 @@ textarea {
 }
 
 footer {
+  z-index: -1;
   font-size: 1rem;
   background-color: black;
   min-height: 400px;
@@ -9990,6 +9991,7 @@ footer .btn-circle-sm {
 footer .footer-text-item {
   font-size: 1rem;
   padding: 1rem 0.3rem;
+  color: white;
 }
 footer .first-column {
   padding-left: 200px;
@@ -10003,6 +10005,7 @@ footer .footer-image {
   position: absolute;
   padding-top: 50px;
   z-index: 1;
+  left: -20px;
 }
 footer .skull-wrapper {
   width: 100%;

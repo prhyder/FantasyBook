@@ -74,11 +74,11 @@ get_header();
 	<!-- Hero -->
 	<section id="hero" class="" >
 		<div class="container text-center pt-5">
-			<div class="row">
+			<div class="row pt-3">
 				<div class="col-12">
 					<h1 class="pt-5 mt-5">CALL OF<br/> SHADOWS</h1>
-					<h2 class="white subtitle" >A journey to a distant land... and an ancient magic unearthed.</h2>
-					<a href="" class="btn btn-primary">
+					<h2 class="subtitle pt-4" >A journey to a distant land... and an ancient magic unearthed.</h2>
+					<a href="" class="btn btn-primary mt-5">
 						<span>Preorder Now</span>
 					</a>
 				</div>

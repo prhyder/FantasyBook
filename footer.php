@@ -11,25 +11,17 @@
 
 ?>
 <footer id="footer" class="pt-5 mt-0 pb-0 mb-0 white">
-	<div class="skull-wrapper">
-		<img loading="lazy" class="footer-image" alt="Call of Shadows Book Cover" height="400" src="<?php echo get_template_directory_uri(); ?>/images/Magic-Book-Skull.png">
-	</div>
-	<div class="container text-container">
-		<div class="row pt-5" style="display:none;">
-			<div class="col-md-4 first-column" ></div>
-			<div class="col-md-4 " >
-			<h4>CALL OF SHADOWS</h4>
-			<ul class="nav flex-column">
-				<li class="nav-item"><a href="#book" class="nav-link p-1 ">The Book</a></li>
-				<li class="nav-item"><a href="#about" class="nav-link p-1 ">About the Author</a></li>
-				<li class="nav-item"><a href="#contact" class="nav-link p-1 ">Contact</a></li>
-				<li class="nav-item"><a href="#subscribe" class="nav-link p-1 ">Subscribe</a></li>
-				<li class="nav-item"><a href="/privacy-policy" class="nav-link p-1 ">Privacy Policy</a></li>
-			</ul>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col ">
+				<div class="skull-wrapper">
+					<img loading="lazy" class="footer-image" alt="Call of Shadows Book Cover" height="400" src="<?php echo get_template_directory_uri(); ?>/images/Magic-Book-Skull.png">
+				</div>
 			</div>
-
-
 		</div>
+	</div>
+	
+	<div class="container text-container">
 		<div class="row">
 			<div class="col">
 				<h4 class="text-center">CALL OF SHADOWS</h4>
@@ -95,7 +87,7 @@
 			<p class="text-center white pt-3">
 				<span class="footer-text-item">© 2024 CJ Kingsley</span>
 				<span class="footer-text-item">-</span>
-				<span class="footer-text-item">Privacy Policy</span>
+				<a href=""><span class="footer-text-item">Privacy Policy</span></a>
 				<span class="footer-text-item">-</span>
 				<span class="footer-text-item">Website By Design Co.</span>
 			</p>
@@ -105,8 +97,6 @@
 
 </footer>
 
-
-
 </div><!-- #page -->
 
 
@@ -115,7 +105,7 @@
 <style>
 
 		#hero {
-				background-image: linear-gradient(to bottom, #00000088, #00000088),
+				background-image: linear-gradient(to bottom, #000000a1, #000000a1),
 				url("<?php echo get_template_directory_uri(); ?>/images/Palace-Background.jpg");
 				background-size: cover;
 				object-fit: contain;
