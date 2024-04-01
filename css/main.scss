@@ -65,14 +65,14 @@ body {
 //==== Buttons =====
 .btn,.wpcf7-form-control.wpcf7-submit {
 	font-weight: 600;
-	//text-transform: uppercase;
+	text-transform: uppercase;
 	padding: 10px 22px;
 	letter-spacing: 0.3px;
 	font-size: 17px;
 	border-radius: $button-corner-radius;
 	color: white;
 	margin-right: 6px;
-	font-family: "Aleo", serif;
+	//font-family: "Aleo", serif;
 
 	&:active{
 		color: white;
@@ -234,6 +234,17 @@ textarea {
 .site-main{
 	margin-top: -100px;
 }
+.interior-page-section {
+	background-color: $bodyTextColorLight;
+}
+.interior-page-content {
+	background-color: #f3f3f3;
+}
+.interior-page {
+	background-color: #f3f3f3;
+	padding-top: 20px;
+	color: $bodyTextColorDark;
+}
 
 
 //====== Carousel ======
@@ -260,14 +271,13 @@ textarea {
 
 //====== Hero =======
 
-#hero {
+.hero {
 	padding-top: 100px;
 	min-height: 100vh;
 
 	
 	@include media-breakpoint-up(md){
 		h1 {
-			font-size: 5rem;
 			padding-left: 6rem;
 			padding-right: 6rem;
 		}
@@ -279,6 +289,18 @@ textarea {
 	.btn {
 		margin-bottom: 24px;
 	}
+}
+
+#hero {
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+#int-hero {
+	min-height: 300px;
+	height: 300px;
+
 }
 
 
@@ -575,7 +597,7 @@ footer {
 		overflow: hidden;
 	}
 
-	@include media-breakpoint-down(lg){
+	@include media-breakpoint-down(md){
 		.text-container {
 			margin-top: 0px;
 		}

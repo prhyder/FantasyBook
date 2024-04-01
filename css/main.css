@@ -9422,6 +9422,10 @@ a :active {
   color: white;
 }
 
+.dark h1, .dark .h1, .dark h2, .dark .h2, .dark h3, .dark .h3, .dark h4, .dark .h4, .dark h5, .dark .h5, .dark h6, .dark .h6, .dark p, .dark li, .dark a, .dark div {
+  color: #0a0c0c;
+}
+
 .color-light {
   color: #c8c7c2;
 }
@@ -9537,13 +9541,13 @@ body {
 
 .btn, .wpcf7-form-control.wpcf7-submit {
   font-weight: 600;
+  text-transform: uppercase;
   padding: 10px 22px;
   letter-spacing: 0.3px;
   font-size: 17px;
   border-radius: 4px;
   color: white;
   margin-right: 6px;
-  font-family: "Aleo", serif;
 }
 .btn:active, .wpcf7-form-control.wpcf7-submit:active {
   color: white;
@@ -9732,6 +9736,20 @@ textarea {
   margin-top: -100px;
 }
 
+.interior-page-section {
+  background-color: #c8c7c2;
+}
+
+.interior-page-content {
+  background-color: #f3f3f3;
+}
+
+.interior-page {
+  background-color: #f3f3f3;
+  padding-top: 20px;
+  color: #0a0c0c;
+}
+
 .carousel-item {
   transition: transform 0.4s ease-in-out;
 }
@@ -9754,22 +9772,30 @@ textarea {
   margin-left: 8px;
 }
 
-#hero {
+.hero {
   padding-top: 100px;
   min-height: 100vh;
 }
 @media (min-width: 768px) {
-  #hero h1, #hero .h1 {
-    font-size: 5rem;
+  .hero h1, .hero .h1 {
     padding-left: 6rem;
     padding-right: 6rem;
   }
 }
-#hero h2, #hero .h2 {
+.hero h2, .hero .h2 {
   font-size: 1.7rem;
 }
-#hero .btn {
+.hero .btn {
   margin-bottom: 24px;
+}
+
+#hero h1, #hero .h1 {
+  font-size: 5rem;
+}
+
+#int-hero {
+  min-height: 300px;
+  height: 300px;
 }
 
 #reviews {
@@ -10011,7 +10037,7 @@ footer .skull-wrapper {
   width: 100%;
   overflow: hidden;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   footer .text-container {
     margin-top: 0px;
   }

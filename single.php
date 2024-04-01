@@ -11,6 +11,14 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+	<?php
+			get_template_part('template-parts/header', 'interior',
+				array(
+					'title' => 'Blog',
+				)
+			);
+		?>
+
 		<div class="conainer">
 			<div class="row">
 				<div class="col">

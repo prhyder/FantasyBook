@@ -87,7 +87,7 @@
 			<p class="text-center white pt-3">
 				<span class="footer-text-item">© 2024 CJ Kingsley</span>
 				<span class="footer-text-item">-</span>
-				<a href=""><span class="footer-text-item">Privacy Policy</span></a>
+				<a href="/privacy-policy"><span class="footer-text-item">Privacy Policy</span></a>
 				<span class="footer-text-item">-</span>
 				<span class="footer-text-item">Website By Design Co.</span>
 			</p>
@@ -104,7 +104,7 @@
 
 <style>
 
-		#hero {
+		#hero, #int-hero {
 				background-image: linear-gradient(to bottom, #000000a1, #000000a1),
 				url("<?php echo get_template_directory_uri(); ?>/images/Palace-Background.jpg");
 				background-size: cover;
