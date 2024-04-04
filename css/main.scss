@@ -58,6 +58,10 @@
 @import "typography";
 @import "navigation";
 
+html {
+	scroll-behavior:smooth;
+}
+
 body {
 	background-color: black;
 }
@@ -273,7 +277,7 @@ textarea {
 
 .hero {
 	padding-top: 100px;
-	min-height: 100vh;
+	
 
 	
 	@include media-breakpoint-up(md){
@@ -292,6 +296,8 @@ textarea {
 }
 
 #hero {
+	min-height: 800px;
+	height: 800px;
 	h1 {
 		font-size: 5rem;
 	}
@@ -528,6 +534,10 @@ footer {
 
 	a {
 		text-decoration: none;
+	}
+
+	.book-title {
+		font-size: 1.6rem;
 	}
 
 	.follow {

@@ -1,21 +1,12 @@
-window.onload = function() {
-
-	// ====== Add click event handlers to bootstrap nav ======
-	const navLinks = document.querySelectorAll('.nav-item');
-	const menuToggle = document.getElementById('navbarResponsive');
-	const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false});
-	navLinks.forEach((l) => {
-		l.addEventListener('click', () => { bsCollapse.toggle() });
+// ====== Scroll To ======
+function scrollTo(elementId){
+	let element = document.getElementById(elementId); 
+	const y = element.getBoundingClientRect().top + window.scrollY;
+	window.scroll({
+		top: y,
+		behavior: 'smooth'
 	});
-
-	const reviewsCarouselElement = document.getElementById('reviewsCarousel');
-	// Autoplay carousel
-	// const carousel = new bootstrap.Carousel(reviewsCarouselElement, {
-	// 	interval: 2000,
-	// 	touch: false
-	// });
 }
-
 
 // ====== Pause / Unpause Video ======
 let vid = document.getElementById("background-video"); 

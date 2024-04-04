@@ -9535,6 +9535,10 @@ header ul {
   flex-direction: column;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
 }
@@ -9774,7 +9778,6 @@ textarea {
 
 .hero {
   padding-top: 100px;
-  min-height: 100vh;
 }
 @media (min-width: 768px) {
   .hero h1, .hero .h1 {
@@ -9789,6 +9792,10 @@ textarea {
   margin-bottom: 24px;
 }
 
+#hero {
+  min-height: 800px;
+  height: 800px;
+}
 #hero h1, #hero .h1 {
   font-size: 5rem;
 }
@@ -9980,6 +9987,9 @@ footer .nav-item a {
 }
 footer a {
   text-decoration: none;
+}
+footer .book-title {
+  font-size: 1.6rem;
 }
 footer .follow {
   font-size: 1rem;

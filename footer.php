@@ -15,7 +15,7 @@
 		<div class="row">
 			<div class="col ">
 				<div class="skull-wrapper">
-					<img loading="lazy" class="footer-image" alt="Call of Shadows Book Cover" height="400" src="<?php echo get_template_directory_uri(); ?>/images/Magic-Book-Skull.png">
+					<img loading="lazy" class="footer-image" alt="Skull and Book Magic" height="400" src="<?php echo get_template_directory_uri(); ?>/images/Magic-Book-Skull.png">
 				</div>
 			</div>
 		</div>
@@ -24,12 +24,12 @@
 	<div class="container text-container">
 		<div class="row">
 			<div class="col">
-				<h4 class="text-center">CALL OF SHADOWS</h4>
+				<p class="book-title text-center">CALL OF SHADOWS</p>
 			<ul class="nav justify-content-center  pb-3 mb-3">
-				<li class="nav-item"><a href="#book" class="nav-link px-2 white">The Book</a></li>
-				<li class="nav-item"><a href="#about" class="nav-link px-2 white">About the Author</a></li>
-				<li class="nav-item"><a href="#contact" class="nav-link px-2 white">Contact</a></li>
-				<li class="nav-item"><a href="#subscribe" class="nav-link px-2 white">Subscribe</a></li>
+				<li class="nav-item"><a href="javascript:scrollTo('book');" class="nav-link px-2 white">The Book</a></li>
+				<li class="nav-item"><a href="javascript:scrollTo('about');" class="nav-link px-2 white">About the Author</a></li>
+				<li class="nav-item"><a href="javascript:scrollTo('contact');" class="nav-link px-2 white">Contact</a></li>
+				<li class="nav-item"><a href="javascript:scrollTo('subscribe');" class="nav-link px-2 white">Subscribe</a></li>
 			</ul>
 			<div class=" text-center white border-bottom pb-5">
 				<p class="follow pb-1">Follow CJ Kingsley</p>
@@ -89,7 +89,7 @@
 				<span class="footer-text-item">-</span>
 				<a href="/privacy-policy"><span class="footer-text-item">Privacy Policy</span></a>
 				<span class="footer-text-item">-</span>
-				<span class="footer-text-item">Website By Design Co.</span>
+				<span class="footer-text-item">Website By <strong><a class="footer-text-item" alt="Bright Evolution Web Design" target="blank" href="http://brightevolutionwebdesign.com/">Bright Evolution Web Design</a></strong></span>
 			</p>
 			</div>
 		</div>
